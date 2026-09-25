@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moussa Ndoye — Développeur Front-End</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "brand-bg": "#0a0a0a",
+            "brand-lime": "#d7fc4a",
+            "brand-card": "#141414",
+          },
+          fontFamily: {
+            display: ["Anton", "sans-serif"],
+            sans: ["Inter", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-brand-bg text-white font-sans">
+
+  <header class="sticky top-0 z-50 bg-brand-bg/90 backdrop-blur border-b border-white/10">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-5">
+      <span class="font-display text-lg tracking-wide">MOUSSA NDOYE</span>
+      <nav class="hidden md:flex gap-8 text-sm">
+        <a href="index.html#projets" class="hover:text-brand-lime transition-colors">Projets</a>
+        <a href="about.html" class="hover:text-brand-lime transition-colors">À propos</a>
+        <a href="index.html#contact" class="hover:text-brand-lime transition-colors">Contact</a>
+      </nav>
+      <button class="md:hidden" aria-label="Ouvrir le menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="font-display uppercase text-5xl md:text-7xl leading-none">
+        Hi, I am<br />Moussa Ndoye.
+      </h1>
+
+      <p class="mt-6 text-gray-400 max-w-md">
+        Un développeur front-end basé à Dakar, passionné par la création de
+        sites web accessibles et conviviaux.
+      </p>
+
+      <div class="mt-8 flex items-center gap-4">
+        <a href="index.html#contact"
+           class="inline-flex items-center gap-2 bg-brand-lime text-black font-semibold text-sm tracking-wide uppercase px-6 py-3 rounded-full hover:opacity-90 transition-opacity">
+          Contactez-moi
+          <span class="w-2 h-2 bg-black rounded-full"></span>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-lime hover:text-black transition-colors">in</a>
+        <a href="#" aria-label="GitHub" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-lime hover:text-black transition-colors">gh</a>
+      </div>
+    </div>
+
+    <div class="w-full aspect-[4/5] bg-gray-300 rounded-sm overflow-hidden">
+    
+
+<!-- Après -->
+<img src="css/image1.png" alt="Portrait de Moussa Ndoye" class="w-full h-full object-cover" />
+    </div>
+  </section>
+
+  <section id="projets" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/10">
+    <h2 class="font-display uppercase text-4xl md:text-5xl">Projets mis en avant</h2>
+    <p class="mt-4 text-gray-400 max-w-md">
+      Voici une sélection de projets qui illustrent ma passion pour le
+      développement front-end.
+    </p>
+
+    <div class="mt-14 space-y-20">
+
+      <article class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="w-full aspect-[4/3] bg-gray-800 overflow-hidden rounded-sm">
+          <img src="https://placehold.co/700x525/1e1e1e/d7fc4a?text=Adventure+Time"
+               alt="Aperçu du site Adventure Time"
+               class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold">
+            Page de destination promotionnelle pour notre émission préférée
+          </h3>
+          <p class="mt-4 text-gray-400">
+            J'ai collaboré avec un designer pour donner vie à une page web
+            promotionnelle dédiée à notre série préférée, Adventure Time.
+            J'ai livré un design entièrement responsive avec des contenus
+            dynamiques, intégrant de manière fluide une fonctionnalité
+            d'abonnement à la newsletter afin de tenir les fans informés des
+            dernières aventures.
+          </p>
+
+          <p class="mt-6 text-xs uppercase tracking-widest text-gray-500">Informations sur le projet</p>
+          <dl class="mt-2 divide-y divide-white/10 text-sm">
+            <div class="flex justify-between py-2">
+              <dt class="text-gray-400">Année</dt><dd>2023</dd>
+            </div>
+            <div class="flex justify-between py-2">
+              <dt class="text-gray-400">Role</dt><dd>Développeur Front-End</dd>
+            </div>
+          </dl>
+
+          <div class="mt-4 flex gap-6 text-brand-lime text-sm font-semibold uppercase tracking-wide">
+            <a href="#" class="hover:underline">Démo ↗</a>
+            <a href="#" class="hover:underline">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="w-full aspect-[4/3] bg-gray-100 overflow-hidden rounded-sm">
+          <img src="https://placehold.co/700x525/f5f5f5/111?text=W.+News"
+               alt="Aperçu du blog d'actualité"
+               class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold">blog pour l'actualité mondiale</h3>
+          <p class="mt-4 text-gray-400">
+            J'ai maîtrisé les complexités de CSS Grid pour créer une page
+            d'accueil innovante pour un site d'actualités, en prenant des
+            décisions de design complexes afin d'assurer une expérience
+            utilisateur fluide. Ce projet m'a permis de renforcer mes
+            compétences en développement front-end.
+          </p>
+
+          <p class="mt-6 text-xs uppercase tracking-widest text-gray-500">Informations sur le projet</p>
+          <dl class="mt-2 divide-y divide-white/10 text-sm">
+            <div class="flex justify-between py-2">
+              <dt class="text-gray-400">Client</dt><dd>web news</dd>
+            </div>
+            <div class="flex justify-between py-2">
+              <dt class="text-gray-400">Année</dt><dd>2022</dd>
+            </div>
+            <div class="flex justify-between py-2">
+              <dt class="text-gray-400">Role</dt><dd>Développeur Front-End</dd>
+            </div>
+          </dl>
+
+          <div class="mt-4 flex gap-6 text-brand-lime text-sm font-semibold uppercase tracking-wide">
+            <a href="#" class="hover:underline">Démo ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="w-full aspect-[4/3] bg-gray-100 overflow-hidden rounded-sm">
+          <img src="https://placehold.co/700x525/f5f5f5/111?text=Sneakers+Store"
+               alt="Aperçu de la page produit e-commerce"
+               class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold">Page produit pour site e-commerce</h3>
+          <p class="mt-4 text-gray-400">
+            J'ai conçu avec succès une page produit attrayante, intégrant une
+            galerie dynamique en lightbox et un panier fonctionnel fluide,
+            démontrant ma maîtrise du développement en JavaScript.
+          </p>
+
+          <p class="mt-6 text-xs uppercase tracking-widest text-gray-500">Informations sur le projet</p>
+          <dl class="mt-2 divide-y divide-white/10 text-sm">
+            <div class="flex justify-between py-2">
+              <dt class="text-gray-400">Année</dt><dd>2022</dd>
+            </div>
+            <div class="flex justify-between py-2">
+              <dt class="text-gray-400">Role</dt><dd>Développeur Front-End</dd>
+            </div>
+          </dl>
+
+          <div class="mt-4 flex gap-6 text-brand-lime text-sm font-semibold uppercase tracking-wide">
+            <a href="#" class="hover:underline">Démo ↗</a>
+            <a href="#" class="hover:underline">GitHub</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="font-display uppercase text-4xl md:text-5xl">Entrons en contact</h2>
+        <p class="mt-4 text-gray-400">
+          Dites bonjour à
+          <a href="mailto:moussandoye@gmail.com" class="underline text-white">moussandoye@gmail.com</a>
+        </p>
+        <p class="text-gray-400">
+          Pour en savoir plus, voici mon
+          <a href="#" class="underline text-white">cv</a>
+        </p>
+
+        <div class="mt-6 flex gap-4 text-brand-lime">
+          <a href="#" aria-label="LinkedIn" class="hover:opacity-80">in</a>
+          <a href="#" aria-label="GitHub" class="hover:opacity-80">gh</a>
+          <a href="#" aria-label="X / Twitter" class="hover:opacity-80">x</a>
+          <a href="#" aria-label="Instagram" class="hover:opacity-80">ig</a>
+        </div>
+      </div>
+
+      <form class="space-y-5">
+        <div>
+          <label for="nom" class="block text-sm mb-1">Nom Complet</label>
+          <input id="nom" type="text" placeholder="John Doe"
+                 class="w-full bg-brand-card border border-white/10 rounded px-4 py-3 text-sm placeholder-gray-500 focus:outline-none focus:border-brand-lime" />
+        </div>
+        <div>
+          <label for="email" class="block text-sm mb-1">Email</label>
+          <input id="email" type="email"
+                 class="w-full bg-brand-card border border-white/10 rounded px-4 py-3 text-sm focus:outline-none focus:border-brand-lime" />
+        </div>
+        <div>
+          <label for="sujet" class="block text-sm mb-1">Sujet</label>
+          <input id="sujet" type="text"
+                 class="w-full bg-brand-card border border-white/10 rounded px-4 py-3 text-sm focus:outline-none focus:border-brand-lime" />
+        </div>
+        <div>
+          <label for="message" class="block text-sm mb-1">Message</label>
+          <textarea id="message" rows="4"
+                    class="w-full bg-brand-card border border-white/10 rounded px-4 py-3 text-sm resize-none focus:outline-none focus:border-brand-lime"></textarea>
+        </div>
+        <button type="submit"
+                class="bg-brand-lime text-black font-semibold text-sm uppercase tracking-wide px-8 py-3 rounded-full hover:opacity-90 transition-opacity">
+          Envoyer
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="max-w-6xl mx-auto px-6 py-8 border-t border-white/10 text-xs text-gray-500">
+    © 2023 Moussa Ndoye
+  </footer>
+
+</body>
+</html>
